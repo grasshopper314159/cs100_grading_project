@@ -35,10 +35,10 @@ Devise.setup do |config|
 
   config.cas_base_url = "https://login.umt.edu"
   # you can override these if you need to, but cas_base_url is usually enough
-  # config.cas_login_url = "https://idp/profile/cas/login"
+  config.cas_login_url = "https://idp/profile/cas/login"
   config.cas_create_user = true
-  # config.cas_logout_url = "https://idp/profile/cas/logout"
-  # config.cas_validate_url = "https://idp/profile/cas/serviceValidate"
+  config.cas_logout_url = "https://idp/profile/cas/logout"
+  config.cas_validate_url = "https://idp/profile/cas/serviceValidate"
   config.cas_username_column = 'email'
 
   # ==> Configuration for any authentication mechanism
